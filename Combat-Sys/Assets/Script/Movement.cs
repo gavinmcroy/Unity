@@ -17,10 +17,9 @@ namespace Script
         }
 
         /// <summary>
-        /// This class does something.
+        /// This function does something nifty
         /// </summary>
         /// <param name = "a"> This is a parameter named a </param>
-        /// 
         /// <param name = "b"> This is a parameter named b </param>
         /// <returns>
         /// The sum of two integers.
@@ -28,7 +27,19 @@ namespace Script
         /// <c> Math.getMyName() </c>
         private void MyGarbageFunction(int a, int b)
         {
-            
+        }
+
+        /// <summary>
+        /// This function does something nifty
+        /// </summary>
+        /// <param name = "alpha"> This is a parameter named a </param>
+        /// <param name = "beta"> This is a parameter named b </param>
+        /// <returns>
+        /// The sum of two integers.
+        /// </returns>
+        /// <c> Math.getMyName() </c>
+        private void AnotherDebugFunction(int alpha, int beta)
+        {
         }
     }
 }

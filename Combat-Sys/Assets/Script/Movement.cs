@@ -12,9 +12,23 @@ namespace Script
             _rigidBody2D = GetComponent<Rigidbody2D>();
         }
 
-
         private void Update()
         {
+        }
+
+        /// <summary>
+        /// This class does something.
+        /// </summary>
+        /// <param name = "a"> This is a parameter named a </param>
+        /// 
+        /// <param name = "b"> This is a parameter named b </param>
+        /// <returns>
+        /// The sum of two integers.
+        /// </returns>
+        /// <c> Math.getMyName() </c>
+        private void MyGarbageFunction(int a, int b)
+        {
+            
         }
     }
 }

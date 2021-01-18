@@ -15,21 +15,29 @@ void {\bfseries Awake} ()
 \mbox{\Hypertarget{class_script_1_1_movement_a444813789bcb9c28604c656cd1bb1536}\label{class_script_1_1_movement_a444813789bcb9c28604c656cd1bb1536}} 
 void {\bfseries Update} ()
 \item 
-void \mbox{\hyperlink{class_script_1_1_movement_a5e5ac812f4d66dd3e5742a7d73a628af}{My\+Garbage\+Function}} (int a, int b)
-\begin{DoxyCompactList}\small\item\em This function does something nifty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_1_1_movement_a102f27b56f649ec3625defa5d95120c6}\label{class_script_1_1_movement_a102f27b56f649ec3625defa5d95120c6}} 
+void {\bfseries Fixed\+Update} ()
+\item 
+void \mbox{\hyperlink{class_script_1_1_movement_aea03f1692bb5bd3acf29180511673520}{Read\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Reads input from the Input Manager Axis. (1,0) is to right and (0,-\/1) is down. Data can only be either -\/1, 0, or 1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_script_1_1_movement_a5b67c0f3023435765d2a8c57af274c47}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Determines which direction the player is travelling with a pair of coordinates. For example (1,0) is to the right. The players velocity attribute inside rigid body is updated therefore this method must be placed inside Fixed\+Update in order to work. Players diagonal position is normalized. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_script_1_1_movement_a67ab66605ee0d9151f130514e99755f2}{Another\+Debug\+Function}} (int alpha, int beta)
 \begin{DoxyCompactList}\small\item\em This function does something nifty \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_script_1_1_movement_a16a2a28addf396e71176f43023c9a9a5}\label{class_script_1_1_movement_a16a2a28addf396e71176f43023c9a9a5}} 
+float {\bfseries move\+Speed} = 5
+\item 
+\mbox{\Hypertarget{class_script_1_1_movement_a45ab4694c1c945cd61359d0a584bcaaa}\label{class_script_1_1_movement_a45ab4694c1c945cd61359d0a584bcaaa}} 
+float {\bfseries \+\_\+x\+Move}
+\item 
+\mbox{\Hypertarget{class_script_1_1_movement_a1e46b70966b0d0d452e5ff46a992ee82}\label{class_script_1_1_movement_a1e46b70966b0d0d452e5ff46a992ee82}} 
+float {\bfseries \+\_\+y\+Move}
+\item 
 \mbox{\Hypertarget{class_script_1_1_movement_ae40d7cc29f6064433f73d285d9e62149}\label{class_script_1_1_movement_ae40d7cc29f6064433f73d285d9e62149}} 
 Rigidbody2D {\bfseries \+\_\+rigid\+Body2D}
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{class_script_1_1_movement_a54beb76737172146a25f064d63bcfc79}\label{class_script_1_1_movement_a54beb76737172146a25f064d63bcfc79}} 
-const int {\bfseries Move\+Speed} = 1
 \end{DoxyCompactItemize}
 
 
@@ -54,27 +62,33 @@ This function does something nifty
 \begin{DoxyReturn}{Returns}
 The sum of two integers. 
 \end{DoxyReturn}
-{\ttfamily  Math.\+get\+My\+Name() } \mbox{\Hypertarget{class_script_1_1_movement_a5e5ac812f4d66dd3e5742a7d73a628af}\label{class_script_1_1_movement_a5e5ac812f4d66dd3e5742a7d73a628af}} 
-\index{Script.Movement@{Script.Movement}!MyGarbageFunction@{MyGarbageFunction}}
-\index{MyGarbageFunction@{MyGarbageFunction}!Script.Movement@{Script.Movement}}
-\doxysubsubsection{\texorpdfstring{MyGarbageFunction()}{MyGarbageFunction()}}
-{\footnotesize\ttfamily void Script.\+Movement.\+My\+Garbage\+Function (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+{\ttfamily  Math.\+get\+My\+Name() } \mbox{\Hypertarget{class_script_1_1_movement_a5b67c0f3023435765d2a8c57af274c47}\label{class_script_1_1_movement_a5b67c0f3023435765d2a8c57af274c47}} 
+\index{Script.Movement@{Script.Movement}!Move@{Move}}
+\index{Move@{Move}!Script.Movement@{Script.Movement}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Script.\+Movement.\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
 
-This function does something nifty 
+Determines which direction the player is travelling with a pair of coordinates. For example (1,0) is to the right. The players velocity attribute inside rigid body is updated therefore this method must be placed inside Fixed\+Update in order to work. Players diagonal position is normalized. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em a} & This is a parameter named a \\
-\hline
-{\em b} & This is a parameter named b \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The sum of two integers. 
+Nothing. 
 \end{DoxyReturn}
-{\ttfamily  Math.\+get\+My\+Name() } 
+\mbox{\Hypertarget{class_script_1_1_movement_aea03f1692bb5bd3acf29180511673520}\label{class_script_1_1_movement_aea03f1692bb5bd3acf29180511673520}} 
+\index{Script.Movement@{Script.Movement}!ReadInput@{ReadInput}}
+\index{ReadInput@{ReadInput}!Script.Movement@{Script.Movement}}
+\doxysubsubsection{\texorpdfstring{ReadInput()}{ReadInput()}}
+{\footnotesize\ttfamily void Script.\+Movement.\+Read\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Reads input from the Input Manager Axis. (1,0) is to right and (0,-\/1) is down. Data can only be either -\/1, 0, or 1 
+
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

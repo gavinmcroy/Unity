@@ -4,19 +4,27 @@ namespace Script
 {
     public class Movement : MonoBehaviour
     {
+        /// <summary>
+        /// The movement speed of the object this script is attached too. Uses SerializeField so if movement
+        /// speed seems to not match what is in the code then change the speed attribute on the object in unity
+        /// </summary>
         [SerializeField] private float moveSpeed = 5;
+
         /// <summary>
         /// The position the player is travelling on the x axis. Either -1, 0, or 1
         /// </summary>
         private float _xMove;
+
         /// <summary>
         /// The position the player is travelling on the y axis. Either -1, 0, or 1
         /// </summary>
         private float _yMove;
+
         private Rigidbody2D _rigidBody2D;
 
         private void Awake()
         {
+            Application.targetFrameRate = 300;
             _rigidBody2D = GetComponent<Rigidbody2D>();
         }
 
@@ -78,6 +86,9 @@ namespace Script
         /// <c> Math.getMyName() </c>
         private void AnotherDebugFunction(int alpha, int beta)
         {
+            
+            
+            
         }
     }
 }

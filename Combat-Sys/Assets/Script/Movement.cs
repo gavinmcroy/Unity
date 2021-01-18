@@ -5,7 +5,13 @@ namespace Script
     public class Movement : MonoBehaviour
     {
         [SerializeField] private float moveSpeed = 5;
+        /// <summary>
+        /// The position the player is travelling on the x axis. Either -1, 0, or 1
+        /// </summary>
         private float _xMove;
+        /// <summary>
+        /// The position the player is travelling on the y axis. Either -1, 0, or 1
+        /// </summary>
         private float _yMove;
         private Rigidbody2D _rigidBody2D;
 

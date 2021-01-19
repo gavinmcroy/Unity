@@ -67,11 +67,11 @@ namespace Script
             var move = new Vector2(_xMove, _yMove);
             if (move.magnitude * moveSpeed > moveSpeed)
             {
-                _rigidBody2D.velocity = move.normalized * moveSpeed;
+                _rigidBody2D.velocity = move.normalized * (moveSpeed * Time.deltaTime);
             }
             else
             {
-                _rigidBody2D.velocity = moveSpeed * move;
+                _rigidBody2D.velocity = move * (moveSpeed * Time.deltaTime);
             }
         }
 
